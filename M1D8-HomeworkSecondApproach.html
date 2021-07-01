@@ -63,7 +63,6 @@
 
       const addParagraph = function (content) {
         let secondParagraph = document.querySelector('div')
-        console.log(secondParagraph)
         let newParagraphNode = document.createElement('p')
         newParagraphNode.innerText = content
         secondParagraph.appendChild(newParagraphNode)
@@ -74,7 +73,8 @@
       */
 
       const firstUlDisappear = function () {
-        //
+        let removeFirstList = document.getElementById('firstList')
+        removeFirstList.remove()
       };
 
       /* EXERCISE 8
@@ -82,7 +82,10 @@
       */
 
       const paintItGreen = function () {
-        //
+        let ulBackgroundColor = document.querySelectorAll('ul')
+        for (let ul of ulBackgroundColor){
+          ul.style.backgroundColor = 'green'
+        }
       };
 
       /* EXERCISE 9
