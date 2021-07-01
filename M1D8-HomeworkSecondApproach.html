@@ -93,7 +93,10 @@
       */
 
       const makeItClickable = function () {
-        //
+        let header = document.querySelector('header')
+        header.onclick = function(event){
+          event.target.classList.toggle("myHeading")
+        }
       };
 
       /* EXERCISE 10
@@ -101,7 +104,10 @@
       */
 
       const changeFooterText = function () {
-        //
+        let getFooter = document.querySelector('footer')
+        getFooter.onclick = function(event){
+        event.target.innerText = 'something else'
+        }
       };
 
       /* EXERCISE 11
@@ -116,7 +122,8 @@
       */
 
       window.onload = function () {
-        //
+        makeItClickable()
+        changeFooterText()
       };
 
       /* EXERCISE 13
