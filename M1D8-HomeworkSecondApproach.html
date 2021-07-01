@@ -51,7 +51,10 @@
        */
 
       const addToTheSecond = function (content) {
-        //
+        let secondList = document.getElementById('secondList')
+        let newLiNode = document.createElement('li')
+        newLiNode.innerText = content
+        secondList.appendChild(newLiNode)
       };
 
       /* EXERCISE 6
@@ -59,7 +62,11 @@
       */
 
       const addParagraph = function (content) {
-        //
+        let secondParagraph = document.querySelector('div')
+        console.log(secondParagraph)
+        let newParagraphNode = document.createElement('p')
+        newParagraphNode.innerText = content
+        secondParagraph.appendChild(newParagraphNode)
       };
 
       /* EXERCISE 7
