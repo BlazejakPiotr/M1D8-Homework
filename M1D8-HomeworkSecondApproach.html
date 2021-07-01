@@ -7,7 +7,12 @@
       */
 
       const changeTitle = function (newTitle) {
-        
+        // Proper way
+        // document.title = newTitle
+
+        // Second way - change H1 title
+        let h1 = document.querySelector('h1')
+        h1.innerText = newTitle
       };
 
       /* EXERCISE 2
@@ -15,7 +20,8 @@
       */
 
       const addClassToTitle = function () {
-        //
+        let changeClass = document.querySelector('h1')
+        changeClass.classList.toggle('myHeading')
       };
 
       /* EXERCISE 3
