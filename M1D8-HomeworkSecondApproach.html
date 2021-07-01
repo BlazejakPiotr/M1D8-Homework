@@ -29,7 +29,10 @@
       */
 
       const changePcontent = function () {
-        //
+        let paragraphs = document.querySelectorAll('div p')
+        for (let p of paragraphs){
+          p.innerText = 'something new'
+        }
       };
 
       /* EXERCISE 4
@@ -37,7 +40,10 @@
       */
 
       const changeUrls = function () {
-        //
+        let links = document.querySelectorAll('a')
+        for (let a of links){
+          a.href = 'https://www.google.com'
+        }
       };
 
       /* EXERCISE 5
